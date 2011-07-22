@@ -1,0 +1,29 @@
+<h1>Listing haikus</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th>Date</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @haikus.each do |haiku| %>
+  <tr>
+    <td><%= haiku.title %></td>
+    <td><%= haiku.body %></td>
+    <td><%= haiku.date %></td>
+    <td><%= haiku.user %></td>
+    <td><%= link_to 'Show', haiku %></td>
+    <td><%= link_to 'Edit', edit_haiku_path(haiku) %></td>
+    <td><%= link_to 'Destroy', haiku, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Haiku', new_haiku_path %>
