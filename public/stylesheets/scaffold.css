@@ -17,11 +17,11 @@ a:visited { color: #666; }
 a:hover { color: #fff; background-color:#000; }
 
 div.field, div.actions {
-  margin-bottom: 10px;
+  margin-bottom: 10px; margin-left:20px;
 }
 
 #notice {
-  color: green;
+  color: gray;
 }
 
 .field_with_errors {
