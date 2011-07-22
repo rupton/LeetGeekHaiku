@@ -1,7 +1,7 @@
-<h1>Listing Haikus</h1>
-
+<img src="/images/NerdHaiku.jpg" height='150' widht='100'><span class="title">Leet Geek Haikus</span>
+<br><br>
 <table>
-  <tr>
+ <!-- <tr>
     <th>Title</th>
     <th>Body</th>
     <th>Date</th>
@@ -9,10 +9,10 @@
     <th></th>
     <th></th>
     <th></th>
-  </tr>
+  </tr> -->
 
 <% @haikus.each do |haiku| %>
-  <tr>
+ <!-- <tr>
     <td><%= haiku.title %></td>
     <td><%= haiku.body %></td>
     <td><%= haiku.date %></td>
@@ -20,7 +20,29 @@
     <td><%= link_to 'Show', haiku %></td>
     <td><%= link_to 'Edit', edit_haiku_path(haiku) %></td>
     <td><%= link_to 'Destroy', haiku, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>-->
+<table class="haikuPost">
+  <tr>
+    <td class="borders"><img src="/images/LeftCorner.png"/></td>
+    <td class="text">Title:<%= haiku.title %></td>
+    <td class="borders"><img src="/images/RightCorner.png"/></td>
   </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><%= haiku.body %></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td class="text">Author:<%=haiku.user%></td>
+	<td>&nbsp;</td>
+  </tr>
+  <tr>
+	  <td><img src="/images/LeftBottomCorner.png"/></td>
+	 <td><%= link_to 'Show', haiku %> | <%= link_to 'Destroy', haiku, :confirm => 'Are you sure?', :method => :delete %> </td>
+     <td><img src="/images/RightBottomCorner.png"/></td>
+  </tr>
+</table>
 <% end %>
 </table>
 
