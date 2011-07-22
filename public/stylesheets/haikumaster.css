@@ -1,7 +1,7 @@
 Table.haikuPost{width:50%;padding: 10px; border: 0; border: 0; border-collapse:collapse;}
-TABLE{background-color:white; color:#000; border: 0; border-collapse:collapse;margin: 10px 0px 10px 20px}
+TABLE{width: 100%; background-color:white; color:#000; border: 0; border-collapse:collapse;margin: 10px 0px 10px 20px}
 TD{background-color:white; color:#000; border: 0; border-collapse:collapse; padding: 0px;}
-TD.text{color:#BBB;border: 0; border-collapse:collapse;}
+TD.text{color:#1d2090;border: 0; border-collapse:collapse; font-style: italic}
 td.borders{width: 20px;border: 0; border-collapse:collapse;}
 .title{font-size:22pt; font-weigt:bolder; letter-spacing:7px; padding-left:10px}
-#bodyContent{ margin: 20px 150px 30px; background-color:#4aa1d6;}
+#bodyContent{ margin: 0px 150px 30px; background-color:#4aa1d6;}
